@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Find Orphan Accounts and Folders"
+        android:id="@+id/fixOrphanAccounts"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:onClick="fixOrphanAccounts"
+        android:layout_gravity="center_horizontal" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Debug Tool Log:"/>
+
+
+    <TextView
+        android:text=""
+        android:id="@+id/debug_progress"
+        android:layout_margin="15dp"
+        android:layout_height="match_parent"
+        android:layout_width="fill_parent"
+        android:textAlignment="center"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        />
+
+</LinearLayout>

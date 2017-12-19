@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:paddingBottom="20dp"
+    android:focusable="false"
+    android:baselineAligned="false"
+    android:background="@android:drawable/dialog_holo_light_frame"
+    android:measureWithLargestChild="false">
+
+
+
+
+    <TextView
+        android:id="@+id/account_server"
+        android:text="XX"
+        android:layout_gravity="top|right"
+        android:layout_height="32dp"
+        android:layout_width="32dp"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        android:layout_marginRight="10dp"
+        />
+
+    <ImageView
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:id="@+id/account_isLoaded"
+        android:src="@drawable/ic_check_black_24dp"
+        android:visibility="visible"
+        android:layout_marginRight="10dp"
+        android:layout_gravity="bottom|right"/>
+
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:measureWithLargestChild="true"
+        android:layout_gravity="left|top"
+        >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:id="@+id/account_selected"
+                android:src="@drawable/ic_check_box_black_24dp"
+                android:visibility="gone"
+                android:layout_gravity="center_vertical"/>
+            <ImageView
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:id="@+id/account_not_selected"
+                android:src="@drawable/ic_check_box_outline_blank_black_24dp"
+                android:visibility="gone"
+                android:layout_gravity="center_vertical"/>
+            <ImageView
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:id="@+id/account_locked"
+                android:src="@drawable/ic_lock_outline_black_24dp"
+                android:visibility="visible"
+                android:layout_gravity="center_vertical"/>
+            <ImageView
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="10dp"
+                android:id="@+id/account_isFolder"
+                android:src="@drawable/ic_folder_black_24dp"
+                android:visibility="visible"
+                android:layout_gravity="center_vertical"/>
+            <TextView android:id="@+id/account_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:textStyle="bold"
+                android:text="ACCOUNT NAME"
+                android:textSize="22sp"
+                android:textColor="#000000"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:singleLine="true"
+                android:background="@android:color/transparent"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"/>
+        </LinearLayout>
+
+
+
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Last Loaded"
+            android:id="@+id/account_info"
+            android:enabled="false"
+            android:textColor="#ff000000"
+            android:background="@android:color/transparent"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"/>
+
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Friend Code"
+            android:id="@+id/friend_code"
+            android:enabled="false"
+            android:textColor="#ff000000"
+            android:background="@android:color/transparent"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"/>
+
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="47,345 Accounts"
+        android:id="@+id/account_itemCount"
+        android:visibility="visible"
+        android:layout_marginRight="15dp"
+        android:textAlignment="3"
+        android:layout_gravity="center_vertical|right"/>
+
+</FrameLayout>

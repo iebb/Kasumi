@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/context_select"
+        android:title="@string/select"/>
+    <item
+        android:id="@+id/context_rename"
+        android:title="@string/rename_account"/>
+    <item
+        android:id="@+id/context_delete"
+        android:title="@string/delete_account"/>
+    <item
+        android:id="@+id/context_move"
+        android:title="@string/move_account"/>
+    <item
+        android:id="@+id/context_lock"
+        android:title="@string/lock_account"/>
+    <item
+        android:id="@+id/context_qr"
+        android:title="@string/get_qr"/>
+</menu>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/context_rename_folder"
+        android:title="Rename Folder"/>
+    <item
+        android:id="@+id/context_delete_folder"
+        android:title="Delete Folder"/>
+    <item
+        android:id="@+id/context_move_folder"
+        android:title="Move Folder"
+        />
+</menu>

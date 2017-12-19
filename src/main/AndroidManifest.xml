@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="md.i0.krfam" >
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:name="md.i0.krfam.KRFAM"
+        android:allowBackup="true"
+        android:icon="@mipmap/kasumi"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="MainActivity"
+            android:launchMode="singleTop" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="ErrorDetected" />
+        <activity android:name="AppPreferences" />
+        <activity android:name="ImportAccounts" />
+        <activity android:name="ExportAccounts" />
+        <activity android:name="DebugTools" />
+        <service android:name="OverlayService" />
+    </application>
+
+</manifest>

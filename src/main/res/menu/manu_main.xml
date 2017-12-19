@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/menu_save"
+        android:icon="@drawable/ic_save_white_24dp"
+        android:title="@string/menu_save"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/menu_new"
+        android:icon="@drawable/ic_add_white_24dp"
+        android:title="@string/menu_new"
+        app:showAsAction="always"/>
+    <item android:id="@+id/menu_search"
+        android:icon="@drawable/ic_search_white_24dp"
+        android:title="@string/menu_search"
+        app:showAsAction="always"/>
+    <item android:id="@+id/menu_sort"
+        android:icon="@drawable/ic_sort_white_24dp"
+        android:title="@string/menu_sort"
+        app:showAsAction="ifRoom"/>
+    <item android:id="@+id/menu_refresh"
+        android:icon="@drawable/ic_refresh_white_24dp"
+        android:title="@string/menu_refresh"
+        app:showAsAction="ifRoom"/>
+    <item android:id="@+id/menu_newFolder"
+        android:icon="@drawable/ic_create_new_folder_white_24dp"
+        android:title="@string/menu_new_folder"
+        app:showAsAction="ifRoom"/>
+    <item android:id="@+id/menu_options"
+        android:title="@string/menu_settings"
+        android:visible="false"
+        android:icon="@drawable/ic_settings_white_24dp"
+        app:showAsAction="ifRoom"/>
+    <item android:id="@+id/menu_deleteCurrent"
+        android:title="@string/menu_delete_gea"
+        android:visible="false"
+        app:showAsAction="never"/>
+    <item android:id="@+id/menu_import"
+        android:title="@string/menu_import"
+        android:visible="false"
+        app:showAsAction="never"/>
+    <item android:id="@+id/menu_export"
+        android:title="@string/menu_backup"
+        android:visible="false"
+        app:showAsAction="never"/>
+    <item android:id="@+id/menu_qr"
+        android:title="@string/menu_qr"
+        app:showAsAction="never"/>
+    <item android:id="@+id/menu_debug"
+        android:title="@string/menu_debug"
+        android:visible="false"
+        app:showAsAction="never"/>
+
+</menu>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Kasumi</string>
+    <string name="item_accounts">%0 账号</string>
+    <string name="item_account">%0 账号</string>
+    <string name="last_loaded">上次载入: %1$s</string>
+    <string name="last_loaded_never">从未被载入</string>
+    <string name="id">ID: %1$s</string>
+
+    <string name="server_name_jp">日服</string>
+
+    <string name="menu_save">保存</string>
+    <string name="menu_new">新账号</string>
+    <string name="menu_search">搜索</string>
+    <string name="menu_sort">排序</string>
+    <string name="menu_refresh">刷新</string>
+    <string name="menu_new_folder">新文件夹</string>
+    <string name="menu_settings">设置</string>
+    <string name="menu_delete_gea">删除账号文件</string>
+    <string name="menu_import">导入账号</string>
+    <string name="menu_backup">备份管理</string>
+    <string name="menu_qr">扫描二维码</string>
+    <string name="menu_debug">调试工具</string>
+
+    <string name="year">年</string>
+    <string name="month">月</string>
+    <string name="day">日</string>
+    <string name="hour">小时</string>
+    <string name="minute">分钟</string>
+    <string name="second">秒</string>
+    <string name="years">年</string>
+    <string name="months">月</string>
+    <string name="days">日</string>
+    <string name="hours">小时</string>
+    <string name="minutes">分钟</string>
+    <string name="seconds">秒</string>
+
+    <string name="ago">前</string>
+
+    <string name="now">刚刚</string>
+
+    <string name="select">选择</string>
+    <string name="rename_account">重命名</string>
+    <string name="delete_account">删除账号</string>
+    <string name="move_account">移动账号</string>
+    <string name="lock_account">锁定账号</string>
+    <string name="get_qr">生成二维码</string>
+
+
+</resources>
