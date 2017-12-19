@@ -2,9 +2,9 @@
 
 **K**irara-fantasia **A**ccount **S**witching **U**tility / **M**anager by **i**eb
 
-Download v0.1.2b: https://github.com/iebb/Kasumi/releases/tag/v0.1.2-beta
+[Download `md.i0.kasumi.0.1.2.apk`](https://github.com/iebb/Kasumi/releases/download/v0.1.2-beta/md.i0.kasumi.0.1.2.apk)
 
-based on https://github.com/Caraxi/SIFAM
+based on [Caraxian's SIFAM](https://github.com/Caraxi/SIFAM)
 
 GPL 2.0 Licensed
 
