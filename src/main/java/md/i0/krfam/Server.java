@@ -151,7 +151,8 @@ public class Server {
                     int num1 = binaryReader.readInt();
                     int num2 = num1 & 0x7F;
                     KRFAM.log("Save data Version: " + ((num1 & 65280) >> 8));
-                    int count1 = binaryReader.readByte() - num2;
+                    int b = (binaryReader.readByte() & 0xff);
+                    int count1 = b - num2;
 
                     byte[] iv = new byte[count1];
                     KRFAM.log("IV Length: " + count1);

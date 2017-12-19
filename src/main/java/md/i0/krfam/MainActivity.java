@@ -1,10 +1,12 @@
 package md.i0.krfam;
 
+import android.Manifest;
 import android.app.AlertDialog;
 import android.app.Dialog;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.Canvas;
@@ -12,6 +14,8 @@ import android.graphics.Color;
 import android.graphics.Paint;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
+import android.support.v4.app.ActivityCompat;
+import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.text.Editable;
 import android.text.InputFilter;
@@ -647,6 +651,14 @@ public class MainActivity extends AppCompatActivity {
             }
         });
         registerForContextMenu(ACCOUNT_LIST);
+
+
+
+        int permission = ActivityCompat.checkSelfPermission(this, "android.permission.WRITE_EXTERNAL_STORAGE");
+        if (permission != PackageManager.PERMISSION_GRANTED) {
+            ActivityCompat.requestPermissions(this, new String[] {Manifest.permission.WRITE_EXTERNAL_STORAGE}, 1);
+        }
+
     }
 
     public void openSettings(View v) {
@@ -1262,5 +1274,14 @@ public class MainActivity extends AppCompatActivity {
         CURRENT_OFFSET -= KRFAM.MAX_DISPLAY;
         getCurrentPage();
     }
+    @Override
+    public void onRequestPermissionsResult (int requestCode, String[] permissions, int[] grantResults) {
+        if (grantResults.length == 1 && PackageManager.PERMISSION_GRANTED == grantResults[0]) {
+
+        } else {
+            KRFAM.Toast("Unable to obtain permission!");
+        }
+    }
+
 
 }
